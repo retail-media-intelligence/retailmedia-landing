@@ -444,18 +444,16 @@
       }
     }
 
-    .logo-wrapper {
+  .logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
 }
 
 .logo-main {
-  width: 160px;
-  max-width: 40vw;
-  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.45));
-  transition: transform 0.3s ease, filter 0.3s ease;
+  width: clamp(160px, 22vw, 260px);  /* tamaño responsivo pero controlado */
+  height: auto;
+  display: block;
 }
 
 .logo-main:hover {
