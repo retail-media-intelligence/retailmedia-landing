@@ -443,6 +443,26 @@
         display: none;
       }
     }
+
+    .logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo-main {
+  width: 160px;
+  max-width: 40vw;
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.45));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-main:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 18px rgba(99, 102, 241, 0.55));
+}
+
   </style>
 </head>
 <body>
@@ -454,7 +474,7 @@
     <header>
       <div class="nav">
         <div class="logo-wrapper">
-          <img src="assets/logo-retailmedia.svg" alt="Retail Media Intelligence Logo" class="logo-main" />
+          <img src="assets/logo-retailmedia.svg" alt="Retail Media Intelligence" class="logo-main" />
         </div>
             <div class="logo-text">Retail Media Intelligence</div>
             <div class="logo-sub" data-i18n="nav.tagline"></div>
