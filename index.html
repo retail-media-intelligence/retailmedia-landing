@@ -450,9 +450,9 @@ main {
 }
 
 .logo-main {
-  width: clamp(160px, 22vw, 260px);  /* tamaño responsivo pero controlado */
-  height: auto;
-  display: block;
+   width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .logo-main:hover {
@@ -469,35 +469,35 @@ main {
 
   <div class="page">
     <header>
-  <div class="nav">
+    <div class="nav">
 
-    <div class="logo">
-      <div class="logo-wrapper">
-        <img src="assets/logo-retailmedia.svg" alt="Retail Media Intelligence" class="logo-main" />
+      <div class="logo">
+        <div class="logo-wrapper">
+          <img src="assets/logo-retailmedia.svg" alt="Retail Media Intelligence" class="logo-main" />
+        </div>
+
+        <div class="logo-text">Retail Media Intelligence</div>
+        <div class="logo-sub" data-i18n="nav.tagline"></div>
       </div>
 
-      <div class="logo-text">Retail Media Intelligence</div>
-      <div class="logo-sub" data-i18n="nav.tagline"></div>
-    </div>
+      <div class="nav-right">
+        <span class="nav-cta-hint" data-i18n="nav.hint"></span>
 
-    <div class="nav-right">
-      <span class="nav-cta-hint" data-i18n="nav.hint"></span>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="es">
+            <span class="lang-flag pa"></span>
+            <span>ES</span>
+          </button>
+          <button class="lang-btn" data-lang="en">
+            <span class="lang-flag us"></span>
+            <span>EN</span>
+          </button>
+        </div>
 
-      <div class="lang-switch">
-        <button class="lang-btn active" data-lang="es">
-          <span class="lang-flag pa"></span>
-          <span>ES</span>
-        </button>
-        <button class="lang-btn" data-lang="en">
-          <span class="lang-flag us"></span>
-          <span>EN</span>
-        </button>
+        <a href="mailto:info@retailmedia.cc" class="btn-outline" data-i18n="nav.emailLabel">
+          info@retailmedia.cc
+        </a>
       </div>
-
-      <a href="mailto:info@retailmedia.cc" class="btn-outline" data-i18n="nav.emailLabel">
-        info@retailmedia.cc
-      </a>
-    </div>
 
   </div>
 </header>
