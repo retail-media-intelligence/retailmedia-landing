@@ -207,21 +207,20 @@
       background-image: url("https://flagcdn.com/w20/us.png");
     }
 
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      padding: 16px 22px 28px;
-    }
+main {
+  /* No queremos que se estire ni que sea flex */
+  padding: 32px 22px 40px;
+}
 
-    .layout {
-      width: 100%;
-      max-width: 1080px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-      gap: 26px;
-      align-items: center;
-    }
+.layout {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto; /* centrado horizontal */
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 26px;
+  align-items: flex-start; /* nada de centrar verticalmente */
+}
 
     /* Tarjeta principal (hero) */
     .hero-card {
